@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Young+Serif&display=swap');
+
+body {
+    background-color: #F3E5D8;
+    margin: 0 auto;
+    font-family: "Young Serif", serif;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-top: 1em;
+}
+
+p {
+    font-weight: 400;
+    opacity: 0.6;
+    margin-top: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 3.7em;
+    margin: 8em 20.3em;
+    border-radius: 1em;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.purple {
+    padding: 15px 30px;
+    background-color: #FFF7FC;
+    border-radius: 15px;
+    margin-top: 2.5em;
+}
+
+.purple ul li {
+    opacity: 0.5;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.purple ul {
+    margin-left: -20px;
+}
+
+.purple ul li::marker {
+    color: #672F48;
+}
+
+.purple h4 {
+    color: #672F48;
+    font-size: 24px;
+}
+
+.ingredient {
+    margin-top: 1em;
+}
+
+h3 {
+    font-weight: 500;
+    color: #824B37;
+    font-size: 2rem;
+}
+
+.list-2 li::marker,  .instruction li::marker{
+    color: #4d1c0a;
+}
+
+.list-2 li, .instruction li {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 0;
+    opacity: 0.5;
+}
+
+.ingredient {
+    margin-bottom: 2em;
+}
+
+hr {
+    opacity: 0.4;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%; /* Ensures the table takes up the full width of its container */
+}
+
+table td {
+    border-bottom: 1px solid #000;
+    border-spacing: 1em;
+    padding: 1em;
+    font-size: 18px;
+}
+
+.class-1 {
+    opacity: 0.5;
+}
+
+.class-2 {
+    color: #824B37;
+}
+
+.last td{
+    border-bottom: none;
+}
