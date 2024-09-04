@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Young+Serif&display=swap');
 
+/*Base STyles*/
+
 body {
     background-color: #F3E5D8;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     font-family: "Young Serif", serif;
+    line-height: 1.6;
 }
 
 h2 {
     font-weight: 500;
     font-size: 2.8rem;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 p {
@@ -18,33 +22,56 @@ p {
     margin-top: 0;
 }
 
-.container {
+/*.container {
     background-color: white;
     padding: 3.7em;
     margin: 8em 20.3em;
     border-radius: 1em;
+}*/
+
+.container {
+    background-color: white;
+    padding: 3em;
+    margin: 6em auto;
+    border-radius: 1em;
+    max-width: 1200px;
 }
+
 
 img {
     width: 100%;
+    height: auto;
     border-radius: 15px;
 }
 
-.purple {
+/*.purple {
     padding: 15px 30px;
     background-color: #FFF7FC;
     border-radius: 15px;
     margin-top: 2.5em;
+}*/
+
+.purple {
+    padding: 1em 2em;
+    background-color: #FFF7FC;
+    border-radius: 15px;
+    margin-top: 2em;
 }
 
 .purple ul li {
     opacity: 0.5;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.5em 0;
+    font-size: 1rem;
 }
 
-.purple ul {
+/*.purple ul {
     margin-left: -20px;
+}*/
+
+.purple ul {
+    list-style: disc inside;
+    margin: 0;
+    padding: 0;
 }
 
 .purple ul li::marker {
@@ -53,17 +80,25 @@ img {
 
 .purple h4 {
     color: #672F48;
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
 }
 
 .ingredient {
     margin-top: 1em;
 }
 
-h3 {
+/*h3 {
     font-weight: 500;
     color: #824B37;
     font-size: 2rem;
+}*/
+
+h3 {
+    font-weight: 500;
+    color: #824B37;
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
 }
 
 .list-2 li::marker,  .instruction li::marker{
@@ -71,9 +106,8 @@ h3 {
 }
 
 .list-2 li, .instruction li {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 0;
+    padding: 0.5em 0;
+    font-size: 1rem;
     opacity: 0.5;
 }
 
@@ -83,6 +117,7 @@ h3 {
 
 hr {
     opacity: 0.4;
+    margin: 2em 0;
 }
 
 table {
@@ -95,7 +130,7 @@ table td {
     border-bottom: 1px solid #000;
     border-spacing: 1em;
     padding: 1em;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .class-1 {
@@ -108,4 +143,116 @@ table td {
 
 .last td{
     border-bottom: none;
+}
+
+
+/* Resposive Styles*/
+
+/* Tablet */
+@media (max-width: 992px) {
+    .container {
+        padding: 2em;
+        margin: 3em 2em;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .purple h4 {
+        font-size: 1.3rem;
+    }
+
+    .ingredient, .instruction, .nutrition {
+        margin-top: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    table td {
+        font-size: 1rem;
+        padding: 0.6em;
+    }
+}
+
+
+/* Mobile devices */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5em;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .purple {
+        padding: 1em;
+    }
+
+    .purple h4 {
+        font-size: 1.2rem;
+    }
+
+    .ingredient, .instruction, .nutrition {
+        margin-top: 1em;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .list-2 li, .instruction li {
+        font-size: 0.95rem;
+    }
+
+    table td {
+        font-size: 0.95rem;
+        padding: 0.5em;
+    }
+
+    .attribution {
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 400px) {
+    .container {
+        padding: 1em;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .purple h4 {
+        font-size: 1.1rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .list-2 li, .instruction li {
+        font-size: 0.9rem;
+    }
+
+    table td {
+        font-size: 0.9rem;
+        padding: 0.4em;
+    }
+
+    .attribution {
+        font-size: 0.7rem;
+    }
 }
